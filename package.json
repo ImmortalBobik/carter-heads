@@ -1,0 +1,14 @@
+{
+  "name": "carter-heads-soccer",
+  "version": "1.0.0",
+  "description": "2D Soccer Heads game: Carter PCs vs Trump Mobile T1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^8.3.4"
+  }
+}
