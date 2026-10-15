@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ["master", "main"]
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -27,12 +27,13 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
+          cache: 'npm'
 
-      - name: Build
+      - name: Install dependencies & Build
         run: |
-          npm install
-          npx vite build
+          npm ci
+          npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
