@@ -27,12 +27,15 @@ const TRUMP_QUOTES = [
   "MADE WITH PURE LUXURY! ✨"
 ];
 
+import carterHeadUrl from './assets/carter_head.png';
+import trumpPhoneUrl from './assets/trump_phone.png';
+
 // Load Images
 const carterImg = new Image();
-carterImg.src = './assets/carter_head.png';
+carterImg.src = carterHeadUrl;
 
 const trumpImg = new Image();
-trumpImg.src = './assets/trump_phone.png';
+trumpImg.src = trumpPhoneUrl;
 
 // Particle class for confetti and trails
 class Particle {
